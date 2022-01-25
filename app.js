@@ -21,11 +21,11 @@ window.addEventListener("load", () => {
        console.log(ciudad);
 
 
-        // Unicacion Por Ciudad
-        //const pais = `http://api.openweathermap.org/data/2.5/weather?q=Ecuador&lang=es&units=metric&appid=6a3b130f8cc2a2577fac82539b3ca3cb`
+        //Unicacion Por Ciudad
+        const pais = `http://api.openweathermap.org/data/2.5/weather?q=Ecuador&lang=es&units=metric&appid=6a3b130f8cc2a2577fac82539b3ca3cb`
         
 
-        fetch(ciudad)
+        fetch(pais)
           .then(res => { return res.json()})
           .then(data => {
           
