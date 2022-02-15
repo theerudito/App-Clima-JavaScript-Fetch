@@ -23,9 +23,10 @@ window.addEventListener("load", () => {
 
         //Unicacion Por Ciudad
         const pais = `http://api.openweathermap.org/data/2.5/weather?q=Ecuador&lang=es&units=metric&appid=6a3b130f8cc2a2577fac82539b3ca3cb`
-        
+        console.log(pais);
 
-        fetch(pais)
+
+        fetch(ciudad)
           .then(res => { return res.json()})
           .then(data => {
           
@@ -71,14 +72,13 @@ window.addEventListener("load", () => {
                         break;  
                     case 'Clouds':
                         iconoAnimado.src='iconos/cloudy-day-1.svg'
-                        console.log('NUBES');
+                        console.log('NUBLADO');
                         break;  
                     default:
                       iconoAnimado.src='iconos/cloudy-day-1.svg'
                       console.log('por defecto');
                   }
 
-          
             // ICONOS ANIMADOS
 
           })
