@@ -26,7 +26,7 @@ window.addEventListener("load", () => {
         console.log(pais);
 
 
-        fetch(ciudad)
+        fetch(pais)
           .then(res => { return res.json()})
           .then(data => {
           
